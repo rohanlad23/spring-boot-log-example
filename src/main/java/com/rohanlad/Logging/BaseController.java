@@ -10,7 +10,7 @@ public class BaseController {
     Logger logger= (Logger) LoggerFactory.getLogger(BaseController.class);
     @RequestMapping("/")
     public String welcome(){
-        logger.error("error occurred!");
+        logger.trace("welcome() accessed!!!");
         return "welcome!";
     }
 }
